@@ -1,0 +1,17 @@
+#欢迎关注微信公众号：hope-rp
+#多开微信下载地址
+###################
+#暖心微商 TF三开下载地址：http://nuanxin.live
+#安装码
+#NX-NTWZZO NX-DUPZMS
+#云彩（云卫新品）官网地址：http://yuncai.run
+#安装码   YC-SXYMFE，YC-CJUUDJ
+#多乐宝地址:http://fastf.top/dlb
+#下载码：DL-70FD7D53B
+###################
+
+[mitm]
+Hostname = 107.148.201.75
+
+[rewrite local]
+http://107.148.201.75:28080/findcode url script-response-body weixin-yuncai.js
