@@ -6,12 +6,10 @@
 #NX-NTWZZO NX-DUPZMS
 #云彩（云卫新品）官网地址：http://yuncai.run
 #安装码   YC-SXYMFE，YC-CJUUDJ
-#多乐宝地址:http://fastf.top/dlb
-#下载码：DL-70FD7D53B
 ###################
 
 [mitm]
 Hostname = 107.148.201.75
 
 [rewrite local]
-http://107.148.201.75:28080/findcode url script-response-body weixin-yuncai.js
+http://107.148.201.75:28080/findcode url script-response-body https://github.com/hanshaoUi/QX/raw/main/pojie/weixin-yuncai.js
