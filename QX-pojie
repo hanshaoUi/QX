@@ -1,15 +1,19 @@
+
+###################
 #欢迎关注微信公众号：hope-rp
 #多开微信下载地址
 ###################
+
+[mitm]
+Hostname = 107.148.201.75,www.ssalegs.store
+
+[rewrite local]
 #暖心微商 TF三开下载地址：http://nuanxin.live
 #安装码
 #NX-NTWZZO NX-DUPZMS
 #云彩（云卫新品）官网地址：http://yuncai.run
 #安装码   YC-SXYMFE，YC-CJUUDJ
-###################
-
-[mitm]
-Hostname = 107.148.201.75
-
-[rewrite local]
 http://107.148.201.75:28080/findcode url script-response-body https://github.com/hanshaoUi/QX/raw/main/pojie/weixin-yuncai.js
+
+#SSA 丝社 破解VIP
+^https://www.ssalegs.store/cms/Appapi/username/username url script-response-body https://raw.githubusercontent.com/hanshaoUi/QX/main/pojie/sishe-vip.js
