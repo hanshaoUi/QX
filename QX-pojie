@@ -16,4 +16,4 @@ Hostname = 107.148.201.75,www.ssalegs.store
 http://107.148.201.75:28080/findcode url script-response-body https://github.com/hanshaoUi/QX/raw/main/pojie/weixin-yuncai.js
 
 #SSA 丝社 破解VIP
-^https://www.ssalegs.store/cms/Appapi/username/username url script-response-body https://raw.githubusercontent.com/hanshaoUi/QX/main/pojie/sishe-vip.js
+#^https://www.ssalegs.store/cms/Appapi/username/username url script-response-body https://raw.githubusercontent.com/hanshaoUi/QX/main/pojie/sishe-vip.js
