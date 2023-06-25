@@ -3,7 +3,7 @@
 解锁图片、视频
 **********************
 [riwrute_local]
-^https:\/\/nymfapp.com\/api.* url script-response-body nyfm.js
+^https:\/\/nymfapp.com\/api.* url script-response-body https://raw.githubusercontent.com/hanshaoUi/QX/main/pojie/nyfm.js
 [mitm]
 hostname = nymfapp.com
 **********************
