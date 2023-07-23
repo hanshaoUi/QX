@@ -11,24 +11,12 @@ hostname = aituhui.top
 */
 
 
-let URL = $response.url;
 
-const queryIndex = URL.lastIndexOf('?');
-const charBeforeQuery = url.charAt(queryIndex - 1);
+
 let Premium = $response.body;
 var modified = JSON.parse(Premium);
-if (charBeforeQuery === 'n') {
-     console.log(modified)
-     modified.detail.maxImg = 100
-} else if (charBeforeQuery === 'w'){
-
-  
-}
-
-
-
-
-
+console.log(modified)
+modified.detail.maxImg = 100
     
 recursiveReplace(modified);
 
