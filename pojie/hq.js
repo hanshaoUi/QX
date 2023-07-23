@@ -3,7 +3,7 @@
 微信小程序：智绘AI
 **********************
 [riwrute_local]
-^https:\/\/chat.haoqingkeji.com\/api.php\/wxapp\/getTasks.* url script-response-body https://raw.githubusercontent.com/hanshaoUi/QX/main/pojie/hq.js
+^https:\/\/chat.haoqingkeji.com\/api.php\/draw\/draw.* url script-response-body https://raw.githubusercontent.com/hanshaoUi/QX/main/pojie/hq.js
 hostname = chat.haoqingkeji.com
 **********************
 
@@ -24,10 +24,9 @@ function recursiveReplace(obj, key, newValue) {
     }
 }
 
-recursiveReplace(modified, 'max', 1000);
+recursiveReplace(modified, 'errno', 0);
 
-recursiveReplace(modified, 'count', 1000);
+recursiveReplace(modified, 'message', '');
 
-recursiveReplace(modified, 'num', 2000);
 
 $done({ body: JSON.stringify(modified) });
