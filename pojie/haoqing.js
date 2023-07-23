@@ -32,4 +32,6 @@ recursiveReplace(modified, 'balance_draw', 10);
 recursiveReplace(modified, 'is_commission', 1);
 recursiveReplace(modified, 'vip_expire_time', '9999-9-9');
 recursiveReplace(modified, 'is_check', 0);
+
+console.log(JSON.stringify(modified))
 $done({ body: JSON.stringify(modified) });
