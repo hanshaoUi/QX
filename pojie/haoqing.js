@@ -7,6 +7,7 @@
 ^https:\/\/chat.haoqingkeji.com\/api.php\/wxapp\/getWxappInfo.* url script-response-body https://raw.githubusercontent.com/hanshaoUi/QX/main/pojie/haoqing.js
 ^https:\/\/chat.haoqingkeji.com\/api.php\/wxapp\/getBalance.* url script-response-body https://raw.githubusercontent.com/hanshaoUi/QX/main/pojie/haoqing.js
 ^https:\/\/chat.haoqingkeji.com\/web.php\/h5\/hasModel4.* url script-response-body https://raw.githubusercontent.com/hanshaoUi/QX/main/pojie/haoqing.js
+^https:\/\/chat.haoqingkeji.com\/web.php\/h5\/getBalance.* url script-response-body https://raw.githubusercontent.com/hanshaoUi/QX/main/pojie/haoqing.js
 [mitm]
 hostname = chat.haoqingkeji.com
 **********************
@@ -36,5 +37,6 @@ recursiveReplace(modified, 'is_commission', 1);
 recursiveReplace(modified, 'vip_expire_time', '9999-9-9');
 recursiveReplace(modified, 'is_check', 0);
 recursiveReplace(modified, 'hasModel4', 1);
+recursiveReplace(modified, 'balance_model4', 1);
 console.log(JSON.stringify(modified))
 $done({ body: JSON.stringify(modified) });
