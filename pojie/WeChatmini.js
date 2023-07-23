@@ -12,7 +12,7 @@ hostname = aituhui.top
 
 let Premium = $response.body;
 var modified = JSON.parse(Premium);
-console.log(modified)
+console.log(JSON.stringify(modified))
 
 function recursiveReplace(obj, key, newValue) {
     if (obj.hasOwnProperty(key)) {
