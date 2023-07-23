@@ -3,7 +3,7 @@
 微信小程序：智绘AI
 **********************
 [riwrute_local]
-^https:\/\/chat.haoqingkeji.com\/api.php.* url script-response-body https://raw.githubusercontent.com/hanshaoUi/QX/main/pojie/haoqing.js
+^https:\/\/chat.haoqingkeji.com\/api.php\/user\/getInfo.* url script-response-body https://raw.githubusercontent.com/hanshaoUi/QX/main/pojie/haoqing.js
 
 ^https:\/\/chat.haoqingkeji.com\/api.php\/wxapp\/getBalance.* url script-response-body https://raw.githubusercontent.com/hanshaoUi/QX/main/pojie/haoqing.js
 
