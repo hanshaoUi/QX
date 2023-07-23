@@ -3,7 +3,7 @@
 微信小程序：智绘AI
 **********************
 [riwrute_local]
-^https:\/\/aituhui.top\/smallapplet\/tasks\/addQueue.* url script-response-body https://raw.githubusercontent.com/hanshaoUi/QX/main/pojie/wechatzhihuiAI.js
+^https:\/\/aituhui.top\/smallapplet\/.* url script-response-body https://raw.githubusercontent.com/hanshaoUi/QX/main/pojie/wechatzhihuiAI.js
 [mitm]
 hostname = aituhui.top
 **********************
@@ -26,5 +26,6 @@ function recursiveReplace(obj, key, newValue) {
 }
 recursiveReplace(modified, 'code', 0);
 recursiveReplace(modified, 'detail', 99);
-
+recursiveReplace(modified, 'maxImg', 99);
+recursiveReplace(modified, 'integral', 9999);
 $done({ body: JSON.stringify(modified) });
