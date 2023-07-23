@@ -3,7 +3,7 @@
 微信小程序：智绘AI
 **********************
 [riwrute_local]
-^https:\/\/aituhui.top\/smallapplet\/tasks\/getMyPosition.* url script-response-body https://raw.githubusercontent.com/hanshaoUi/QX/main/pojie/WeChatmini.js
+^https:\/\/aituhui.top\/smallapplet\/tasks\/addQueue.* url script-response-body https://raw.githubusercontent.com/hanshaoUi/QX/main/pojie/WeChatzhihui.js
 [mitm]
 hostname = aituhui.top
 **********************
@@ -25,6 +25,6 @@ function recursiveReplace(obj, key, newValue) {
     }
 }
 
-recursiveReplace(modified, 'detail', 100);
+recursiveReplace(modified, 'detail', "正在绘制中，请稍后到我的页面取图");
 
 $done({ body: JSON.stringify(modified) });
