@@ -18,26 +18,10 @@ const charBeforeQuery = url.charAt(queryIndex - 1);
 let Premium = $response.body;
 var modified = JSON.parse(Premium);
 if (charBeforeQuery === 'n') {
-      function recursiveReplace(obj) {
-        for (var key in obj) {
-          if (typeof obj[key] === 'object') {
-            recursiveReplace(obj[key]); // 递归处理对象或数组
-          } else if (key === 'detail') {
-            obj[key] = 100; // 替换匹配到的值
-          }
-        }
-      }
+     console.log(modified)
+     modified.detail.maxImg = 100
 } else if (charBeforeQuery === 'w'){
 
-  function recursiveReplace(obj) {
-        for (var key in obj) {
-          if (typeof obj[key] === 'object') {
-            recursiveReplace(obj[key]); // 递归处理对象或数组
-          } else if (key === 'maxImg') {
-            obj[key] = 100; // 替换匹配到的值
-          }
-        }
-      }
   
 }
 
