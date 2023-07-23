@@ -10,14 +10,21 @@ hostname = aituhui.top
 
 */
 
-
-
-
 let Premium = $response.body;
 var modified = JSON.parse(Premium);
 console.log(modified)
-modified.detail.maxImg = 100
-    
-recursiveReplace(modified);
+
+function recursiveReplace(obj, key, newValue) {
+    if (obj.hasOwnProperty(key)) {
+        obj[key] = newValue;
+    }
+    for (let i in obj) {
+        if (obj[i] !== null && typeof obj[i] === 'object') {
+            recursiveReplace(obj[i], key, newValue);
+        }
+    }
+}
+
+recursiveReplace(modified, 'maxImg', 100);
 
 $done({ body: JSON.stringify(modified) });
