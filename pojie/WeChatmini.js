@@ -25,6 +25,6 @@ function recursiveReplace(obj, key, newValue) {
     }
 }
 
-recursiveReplace(modified, 'maxImg', 100);
+recursiveReplace(modified, 'detail', 100);
 
 $done({ body: JSON.stringify(modified) });
