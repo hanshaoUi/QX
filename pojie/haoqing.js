@@ -26,7 +26,7 @@ function recursiveReplace(obj, key, newValue) {
 }
 
 recursiveReplace(modified, 'errno', 0);
-recursiveReplace(modified, 'message', 0);
+
 recursiveReplace(modified, 'balance', 10);
 recursiveReplace(modified, 'balance_draw', 10);
 recursiveReplace(modified, 'balance_model4', 10);
