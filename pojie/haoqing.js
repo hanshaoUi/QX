@@ -27,7 +27,7 @@ function recursiveReplace(obj, key, newValue) {
 
 recursiveReplace(modified, 'errno', 0);
 recursiveReplace(modified, 'balance', 1000);
-recursiveReplace(modified, 'balance_draw', 10);
+recursiveReplace(modified, 'balance_draw', 19990);
 
 recursiveReplace(modified, 'is_commission', 1);
 recursiveReplace(modified, 'vip_expire_time', '9999-9-9');
