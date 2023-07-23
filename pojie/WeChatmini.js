@@ -3,7 +3,7 @@
 微信小程序：智绘AI
 **********************
 [riwrute_local]
-^https:\/\/nymfapp.com\/api.* url script-response-body https://raw.githubusercontent.com/hanshaoUi/QX/main/pojie/nyfm.js
+^https:\/\/nymfapp.com\/api.* url script-response-body https://raw.githubusercontent.com/hanshaoUi/QX/main/pojie/WeChatmini.js
 [mitm]
 hostname = nymfapp.com
 **********************
